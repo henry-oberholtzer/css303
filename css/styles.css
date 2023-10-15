@@ -10,6 +10,7 @@
     --keyplate-back: #d1d3d2;
     --black-ink: #282829;
     --ink-red: #a54a2b;
+    --border-gradient: linear-gradient(var(--case-top-highlight) 0%, var(--case-right-shadow) 5% 95%, var(--case-bottom-shadow) 100%)
 }
 
 
@@ -155,7 +156,6 @@ body {
     border-bottom: var(--case-top-highlight) 1px solid;
     border-radius: 50%;
     display: flex;
-    overflow: clip;
 }
 
 .inset {
@@ -172,4 +172,17 @@ body {
     margin-left: -1px;
     width: 60px;
     height: 60px;
+}
+
+.point {
+    width: 7px;
+    height: 2px;
+    border-radius: 25%;
+    background-color: var(--black-ink);
+    top: 50%;
+    left: -10px;
+    z-index: 20;
+    position: relative;
+    display: flex;
+    overflow: visible;
 }
