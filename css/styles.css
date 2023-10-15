@@ -17,10 +17,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: var(--black-ink);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
     background-color: black;
+    height: 100vh;
+    max-height: 100%;
 }
 
 .case {
@@ -30,6 +34,8 @@ body {
     border-left: var(--case-left-shadow-dark) solid 1px;
     border-right: var(--case-right-shadow) solid 1px;
     border-bottom: var(--case-bottom-shadow) solid 5px;
+    margin: auto;
+
 }
 
 .back {
@@ -78,9 +84,8 @@ body {
 }
 
 .logo-portion {
-    width: 290px; 
+    width: 288.5px; 
     height: 100%;
-    border-right: var(--black-ink) solid 3px;
     display: flex;
     flex-direction: column;
 }
@@ -94,9 +99,47 @@ body {
     font-size: 10px;
 }
 
+.input {
+    text-align: center;
+    font-weight: bold;
+}
+
+.input p:first-of-type {
+    font-size: 8px;
+}
+
 .roland-logo {
     font-size: 40px;
     display: flex;
     flex-direction: row;
     margin: auto;
+}
+
+.border {
+    width: 3px;
+    height: 90px;
+    margin-top: 6px;
+    border-radius: 2px;
+    background-color: var(--black-ink);
+}
+
+.small-knob-portion {
+    display: flex;
+    flex-direction: row;
+}
+
+.small-knob-chunk {
+    width: 85px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    margin: 6px 6px;
+}
+
+.small-knob-chunk:first-of-type {
+    margin-left: 10px;
+}
+
+.small-knob-chunk:last-of-type {
+    margin-right: 10px;
 }
