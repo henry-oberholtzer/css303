@@ -1,0 +1,95 @@
+/* color palette */
+:root {
+    --case: #bcbebb;
+    --case-top-highlight: #f7ffff;
+    --case-left-shadow: #b7b9b5;
+    --case-left-shadow-dark: #959697;
+    --case-right-shadow: #5f5956;
+    --case-bottom-shadow: #968c7b;
+    --case-bottom-dark-shadow: #574c41;
+    --keyplate-back: #d1d3d2;
+    --black-ink: #282829;
+    --ink-red: #a54a2b;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.case {
+    background-color: var(--case);
+    border-radius: 5px;
+    border-top: var(--case-top-highlight) solid 1px;
+    border-left: var(--case-left-shadow-dark) solid 1px;
+    border-right: var(--case-right-shadow) solid 1px;
+    border-bottom: var(--case-bottom-shadow) solid 5px;
+}
+
+.back {
+    width: 1180px;
+    height: 570px;
+}
+
+.topcontrol {
+    width: 1170px;
+    height: 290px;
+    margin: 5px;
+    position: absolute;
+}
+
+.bottomcontrol {
+    width: 1170px;
+    height: 260px;
+    top: 290px;
+    margin: 5px;
+    position: absolute;
+    border-radius: 0px;
+    border-left: var(--case-left-shadow-dark) solid 6px;
+    border-top: var(--case-top-highlight) solid 1px;
+    border-right: var(--case-right-shadow) solid 6px;
+    border-bottom: var(--case-bottom-shadow) solid 6px;
+}
+
+.keyplate {
+    width: 1138px;
+    height: 233px;
+    background-color: var(--keyplate-back);
+    position: absolute;
+    left: 11px;
+    top: 11px;
+    border: var(--black-ink) solid 1px;
+    border-radius: 1px;
+}
+
+.topknobs {
+    height: 120px;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-portion {
+    width: 290px; 
+    height: 100%;
+    border-right: var(--black-ink) solid 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-block {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 10px;
+}
