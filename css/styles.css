@@ -93,3 +93,10 @@ body {
     justify-content: space-evenly;
     font-size: 10px;
 }
+
+.roland-logo {
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
